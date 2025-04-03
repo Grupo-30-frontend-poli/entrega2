@@ -1,0 +1,38 @@
+body {
+    background-color: #111;
+    color: white;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background: linear-gradient(to right, #111, #551A3B);
+}
+
+.hero img {
+    max-width: 100%;
+}
+
+.btn-custom {
+    background-color: #E6007E;
+    color: white;
+    border: none;
+}
+
+.btn-custom:hover {
+    background-color: #C4006E;
+}
+
+.contact-bar {
+    background-color: #222;
+    padding: 15px;
+    text-align: center;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+}
