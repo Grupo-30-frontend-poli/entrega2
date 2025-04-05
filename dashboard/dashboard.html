@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- Declaración del tipo de documento: HTML5 -->
+<html lang="es">
+<!-- Idioma principal del documento configurado a español -->
+
+<head>
+  <!-- Metadatos del documento -->
+  <meta charset="UTF-8" />
+  <!-- Codificación de caracteres en UTF-8 para admitir acentos y caracteres especiales -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Permite que el diseño sea responsive (adaptable a móviles y otros dispositivos) -->
+
+  <title>Dashboard</title>
+  <!-- Título de la página que se muestra en la pestaña del navegador -->
+
+  <link rel="stylesheet" href="../styles.css" />
+  <!-- Enlace a la hoja de estilos externa -->
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Inclusión de la librería Chart.js desde CDN para generar gráficos -->
+</head>
+
+<body>
+  <!-- Cuerpo principal del documento HTML -->
+
+  <!-- Encabezado de la aplicación con logo y título -->
+  <header class="main-header">
+    <img src="../assets/logo.png" class="logo" alt="Logo" />
+    <!-- Imagen del logo de la app -->
+
+    <h1 class="app-title">MOVESAFE</h1>
+    <!-- Título principal de la aplicación -->
+  </header>
+
+  <!-- Barra de navegación con enlaces a otras secciones -->
+  <nav class="navbar">
+    <a href="../usuario_particular/solicitud_inspeccion.html">Solicitud</a>
+    <!-- Enlace a la página para solicitar inspección -->
+
+    <a href="../usuario_particular/consulta_inspecciones.html">Consultas</a>
+    <!-- Enlace a la página de consulta de inspecciones -->
+
+    <a href="dashboard.html">Dashboard</a>
+    <!-- Enlace al dashboard actual -->
+  </nav>
+
+  <!-- Contenido principal del dashboard -->
+  <main>
+    <h2>Resumen de Inspecciones</h2>
+    <!-- Subtítulo de la sección -->
+
+    <!-- Tarjetas con resumen numérico de inspecciones -->
+    <div class="resumen">
+      <div class="tarjeta">Total: 100</div>
+      <!-- Tarjeta mostrando total de inspecciones -->
+
+      <div class="tarjeta">Completadas: 70</div>
+      <!-- Tarjeta con número de inspecciones completadas -->
+
+      <div class="tarjeta">Pendientes: 30</div>
+      <!-- Tarjeta con número de inspecciones pendientes

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- Declaración del tipo de documento: HTML5 -->
+<html lang="es">
+<!-- Etiqueta raíz del documento, con idioma configurado a español -->
+
+<head>
+  <!-- Información de metadatos del documento -->
+  <meta charset="UTF-8" />
+  <!-- Codificación de caracteres: UTF-8 para admitir caracteres especiales -->
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Hace que la página sea responsive: se adapta a dispositivos móviles -->
+  
+  <title>Solicitud de Inspección</title>
+  <!-- Título que aparece en la pestaña del navegador -->
+
+  <link rel="stylesheet" href="../styles.css" />
+  <!-- Enlace a la hoja de estilos externa para aplicar el diseño visual -->
+</head>
+
+<body>
+  <!-- Cuerpo del documento, contenido visible -->
+
+  <!-- Encabezado principal con logo y título -->
+  <header class="main-header">
+    <img src="../assets/logo.png" class="logo" alt="Logo" />
+    <!-- Imagen del logo con clase para estilos -->
+    
+    <h1 class="app-title">MOVESAFE</h1>
+    <!-- Título de la aplicación -->
+  </header>
+
+  <!-- Barra de navegación con enlaces internos -->
+  <nav class="navbar">
+    <a href="solicitud_inspeccion.html">Solicitud</a>
+    <!-- Enlace a la página de solicitud de inspección -->
+    
+    <a href="consulta_inspecciones.html">Consultas</a>
+    <!-- Enlace a la página de consulta de inspecciones -->
+  </nav>
+
+  <!-- Contenido principal -->
+  <main>
+    <h2>Solicitar Inspección</h2>
+    <!-- Subtítulo de la sección principal -->
+
+    <!-- Formulario para solicitar una inspección -->
+    <form class="formulario">
+
+      <!-- Selección del tipo de inspección -->
+      <label for="tipo">Tipo de inspección:</label>
+      <select id="tipo" required>
+        <option value="">Seleccione</option>
+        <option value="tecnica">Técnica</option>
+        <option value="documental">Documental</option>
+      </select>
+
+      <!-- Fecha de la inspección -->
+      <label for="fecha">Fecha:</label>
+      <input type="date" id="fecha" required />
+
+      <!-- Hora de la inspección -->
+      <label for="hora">Hora:</label>
+      <input type="time" id="hora" required />
+
+      <!-- Selección del centro de inspección -->
+      <label for="centro">Centro de inspección:</label>
+      <select id="centro" required>
+        <option value="">Seleccione</option>
+        <option value="norte">Centro Norte</option>
+        <option value="sur">Centro Sur</option>
+      </select>
+
+      <!-- Campo para ingresar la placa del vehículo -->
+      <label for="placa">Placa del vehículo:</label>
+      <input type="text" id="placa" required placeholder="Ej: ABC123" />
+
+      <!-- Botón para enviar el formulario -->
+      <button type="submit">Enviar Solicitud</button>
+    </form>
+  </main>
+</body>
+</html>
+

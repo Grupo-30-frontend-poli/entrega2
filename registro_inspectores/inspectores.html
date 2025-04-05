@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- Declaración del tipo de documento HTML5 -->
+<html lang="es">
+<!-- Establece el idioma principal del documento como español -->
+
+<head>
+  <!-- Metadatos del documento -->
+  <meta charset="UTF-8" />
+  <!-- Codificación de caracteres en UTF-8 para soportar acentos y caracteres especiales -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Hace que la página sea responsive en dispositivos móviles -->
+
+  <title>Registro de Inspectores</title>
+  <!-- Título de la página que se muestra en la pestaña del navegador -->
+
+  <link rel="stylesheet" href="../styles.css" />
+  <!-- Enlace a la hoja de estilos externa para aplicar estilos personalizados -->
+</head>
+
+<body>
+  <!-- Inicio del cuerpo del documento HTML -->
+
+  <!-- Encabezado con el logo y el nombre de la aplicación -->
+  <header class="main-header">
+    <img src="../assets/logo.png" class="logo" alt="Logo" />
+    <!-- Imagen del logo de la aplicación -->
+
+    <h1 class="app-title">MOVESAFE</h1>
+    <!-- Título principal de la app -->
+  </header>
+
+  <!-- Barra de navegación con enlaces a otras secciones del sistema -->
+  <nav class="navbar">
+    <a href="../usuario_particular/solicitud_inspeccion.html">Solicitud</a>
+    <!-- Enlace a la página de solicitud de inspecciones -->
+
+    <a href="../usuario_particular/consulta_inspecciones.html">Consultas</a>
+    <!-- Enlace a la página de consulta de inspecciones -->
+
+    <a href="../dashboard/dashboard.html">Dashboard</a>
+    <!-- Enlace al dashboard administrativo -->
+
+    <a href="inspectores.html">Inspectores</a>
+    <!-- Enlace actual para registrar inspectores -->
+  </nav>
+
+  <!-- Contenido principal -->
+  <main>
+    <h2>Registrar Inspector</h2>
+    <!-- Subtítulo de la sección -->
+
+    <!-- Formulario para registrar un nuevo inspector -->
+    <form class="formulario">
+      <!-- Campo para ingresar el nombre completo -->
+      <label for="nombre">Nombre Completo:</label>
+      <input type="text" id="nombre" required />
+
+      <!-- Campo para ingresar el número de documento -->
+      <label for="documento">Documento:</label>
+      <input type="text" id="documento" required />
+
+      <!-- Campo para ingresar el correo electrónico -->
+      <label for="correo">Correo Electrónico:</label>
+      <input type="email" id="correo" required />
+
+      <!-- Campo para ingresar el número de teléfono -->
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" required />
+
+      <!-- Botón para enviar el formulario -->
+      <button type="submit">Registrar</button>
+    </form>
+  </main>
+</body>
+</html>
+
