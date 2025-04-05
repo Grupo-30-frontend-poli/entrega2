@@ -1,38 +1,97 @@
+/* Estilo general para el cuerpo del documento */
 body {
-    background-color: #111;
-    color: white;
+  font-family: Arial, sans-serif; /* Fuente principal */
+  margin: 0; /* Elimina márgenes por defecto del navegador */
+  background: linear-gradient(to bottom, #c02351, #000); /* Fondo degradado de rosa a negro */
+  color: #fff; /* Color de texto blanco por defecto */
 }
 
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 50px;
-    background: linear-gradient(to right, #111, #551A3B);
+/* Encabezado principal de la aplicación */
+.main-header {
+  display: flex; /* Usa Flexbox para alinear elementos en fila */
+  align-items: center; /* Centra verticalmente los elementos */
+  padding: 10px; /* Espaciado interno */
+  background: #000; /* Fondo negro */
 }
 
-.hero img {
-    max-width: 100%;
+/* Logo dentro del encabezado */
+.logo {
+  height: 40px; /* Altura fija del logo */
+  margin-right: 15px; /* Espacio a la derecha del logo */
 }
 
-.btn-custom {
-    background-color: #E6007E;
-    color: white;
-    border: none;
+/* Título de la aplicación */
+.app-title {
+  font-size: 24px; /* Tamaño de fuente grande para el título */
 }
 
-.btn-custom:hover {
-    background-color: #C4006E;
+/* Barra de navegación */
+.navbar {
+  background-color: #222; /* Fondo gris oscuro */
+  padding: 10px; /* Espaciado interno */
+  display: flex; /* Usa Flexbox para organizar enlaces */
+  gap: 10px; /* Espacio entre enlaces */
 }
 
-.contact-bar {
-    background-color: #222;
-    padding: 15px;
-    text-align: center;
+/* Estilo para los enlaces de navegación */
+.navbar a {
+  color: #fff; /* Texto blanco */
+  text-decoration: none; /* Quita subrayado */
+  font-weight: bold; /* Fuente en negrita */
 }
 
-.social-icons a {
-    color: white;
-    margin: 0 10px;
-    font-size: 24px;
+/* Contenido principal del sitio */
+main {
+  padding: 20px; /* Espaciado alrededor del contenido */
+}
+
+/* Formulario general */
+.formulario {
+  display: grid; /* Usa grid layout para organizar campos */
+  gap: 10px; /* Espacio entre los campos */
+  max-width: 400px; /* Ancho máximo del formulario */
+}
+
+/* Sección de filtros encima de tablas o tarjetas */
+.filtros {
+  margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Tabla para mostrar inspecciones */
+.tabla-inspecciones {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  border-collapse: collapse; /* Elimina espacios entre bordes de celdas */
+  background: #fff; /* Fondo blanco */
+  color: #000; /* Texto negro */
+}
+
+/* Estilo de celdas (cabecera y cuerpo) */
+.tabla-inspecciones th,
+.tabla-inspecciones td {
+  border: 1px solid #000; /* Borde negro delgado */
+  padding: 8px; /* Espaciado interno en celdas */
+}
+
+/* Tarjeta individual (resumen de información) */
+.tarjeta {
+  background: #c02351; /* Fondo rosado */
+  padding: 15px; /* Espaciado interno */
+  margin: 10px; /* Espacio externo entre tarjetas */
+  border-radius: 10px; /* Bordes redondeados */
+  text-align: center; /* Centrado del texto */
+  font-size: 18px; /* Tamaño de fuente mediano/grande */
+}
+
+/* Contenedor de resumen con tarjetas */
+.resumen {
+  display: flex; /* Layout flexible */
+  justify-content: space-around; /* Distribuye el espacio entre las tarjetas */
+  flex-wrap: wrap; /* Permite que las tarjetas se ajusten en varias filas */
+}
+
+/* Estilo para elementos canvas (gráficos, etc.) */
+canvas {
+  background-color: #fff; /* Fondo blanco para resaltar el gráfico */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 10px; /* Espaciado interno */
 }
