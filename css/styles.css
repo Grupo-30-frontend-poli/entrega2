@@ -1,20 +1,8 @@
 body {
-    background-color: #111;
+   margin: 0;
     color: white;
+    background-color:  bg-dark;
 }
-
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 50px;
-    background: linear-gradient(to right, #111, #551A3B);
-}
-
-.hero img {
-    max-width: 100%;
-}
-
 .btn-custom {
     background-color: #E6007E;
     color: white;
@@ -25,14 +13,49 @@ body {
     background-color: #C4006E;
 }
 
-.contact-bar {
-    background-color: #222;
-    padding: 15px;
-    text-align: center;
-}
+
 
 .social-icons a {
     color: white;
     margin: 0 10px;
     font-size: 24px;
+}
+.cont-izquierdo{
+    padding-top: 20px ;
+    padding-left: 40px;
+    background: radial-gradient(circle at 80% 20%, #111, #551A3B);
+    background-size: 150% 150%;
+    background-repeat: no-repeat;
+   
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    position: relative; 
+    left: -50px;
+    transform: translateX(-40px); 
+}
+
+.cont-vehiculo{
+    padding: 40px;
+    height: auto;
+}
+.titulo-con-moto{
+    font-size: 30px;
+    color: #E6007E;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.titulo-con-moto button{
+    background-color: #E6007E;
+    color: white;
+    border-radius: 10px;
+    
+}
+.pie-pagina {
+    background-color: #222;
+    padding: 15px;
+    text-align: center;
 }
