@@ -2,6 +2,8 @@ body {
    margin: 0;
     color: white;
     background-color:  bg-dark;
+    min-width: 350px;
+    
 }
 .btn-custom {
     background-color: #E6007E;
@@ -37,6 +39,11 @@ body {
     transform: translateX(-40px); 
 }
 
+.img-moto {
+    max-width: 100%;
+    height: auto;
+
+}
 .cont-vehiculo{
     padding: 40px;
     height: auto;

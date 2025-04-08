@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS - Inicio de Sesión</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+        <a class="navbar-brand" href="#">
+            <img src="../../img/logo pagina.png" alt="Logo MoveSafe" style="height: 60px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="../../index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="../servicios/servicios.html">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="../contactanos/contactanos.html">Contáctanos</a></li>
+                <li class="nav-item"><a class="nav-link active" href="#">Iniciar Sesión</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="container my-5">
+        <div class="row align-items-center">
+            <!-- Sección de botones -->
+            <div class="col-12 col-md-6 text-center">
+                <h1 class="mb-4">Inicio de Sesión</h1>
+                <div class="row text-center mb-4">
+                    <div class="col-6">
+                        <button class="btn w-100 btn-custom " type="button" id="btn-cliente">Soy cliente</button>
+                    </div>
+                    <div class="col-6">
+                        <button class="btn w-100 btn-custom " type="button" id="btn-inspeccion">Realizar inspección</button>
+                    </div>
+                </div>
+                <p class="lead"><strong>¡Inspecciones inteligentes!</strong></p>
+                <p>Selecciona una opción para continuar.</p>
+            </div>
+
+            <!-- Formulario dinámico -->
+            <div class="col-12 col-md-6">
+                <div class="card shadow-lg p-4" id="form-container">
+                    <form id="form-cliente" style="display: none;">
+                        <h4 class="mb-3 titulo-fom">Inicio de Sesión - Cliente</h4>
+                        <div class="mb-3">
+                            <label for="usuario" class="form-label">Usuario</label>
+                            <input type="text" name="usuario" id="usuario" class="form-control" placeholder="Tu usuario" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password-cliente" class="form-label">Contraseña</label>
+                            <input type="password" name="password" id="password-cliente" class="form-control" placeholder="Tu contraseña" required>
+                        </div>
+                        <button type="submit" class="btn btn-custom  w-100">Iniciar Sesión</button>
+                    </form>
+
+                    <form id="form-inspeccion" style="display: none;">
+                        <h4 class="mb-3 titulo-fom">Inicio de Sesión - Inspección</h4>
+                        <div class="mb-3">
+                            <label for="placa" class="form-label">Placa del Vehículo</label>
+                            <input type="text" name="placa" id="placa" class="form-control" placeholder="Placa del vehículo" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password-inspeccion" class="form-label">Contraseña</label>
+                            <input type="password" name="password" id="password-inspeccion" class="form-control" placeholder="Tu contraseña" required>
+                        </div>
+                        <button type="submit" class="btn btn-custom w-100">Iniciar Inspección</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <h5>Contacto</h5>
+                    <p class="mb-1">info@movesafe.com</p>
+                    <p>Tel: +123 456 789</p>
+                    <p>Dirección: Calle Falsa 123, Bogotá, Colombia</p>
+                </div>
+                <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+                    <h5>Síguenos</h5>
+                    <div class="social-icons">
+                        <a href="#" class="me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="me-3"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 text-center text-md-end">
+                    <p class="mb-0">&copy; 2025 MoveSafe. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Mostrar el formulario correspondiente
+        document.getElementById('btn-cliente').addEventListener('click', function () {
+            document.getElementById('form-cliente').style.display = 'block';
+            document.getElementById('form-inspeccion').style.display = 'none';
+        });
+
+        document.getElementById('btn-inspeccion').addEventListener('click', function () {
+            document.getElementById('form-inspeccion').style.display = 'block';
+            document.getElementById('form-cliente').style.display = 'none';
+        });
+    </script>
+</body>
+
+</html>

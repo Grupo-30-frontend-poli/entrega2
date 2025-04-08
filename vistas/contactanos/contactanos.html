@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS - Contáctanos</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+        <a class="navbar-brand" href="#">
+            <img src="../../img/logo pagina.png" alt="Logo MoveSafe" style="height: 60px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="../../index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="../servicios/servicios.html">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link active" href="#">Contáctanos</a></li>
+                <li class="nav-item"><a class="nav-link" href="../Inicio sesion/inicio-sesion.html">Iniciar Sesión</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="container my-5">
+        <div class="row align-items-center">
+            <!-- Sección de información -->
+            <div class="col-12 col-md-6 text-center text-md-start">
+                <h1 class="mb-4">Contáctanos</h1>
+                <p class="lead"><strong>¡Inspecciones inteligentes!</strong></p>
+                <p>Estamos aquí para ayudarte. Completa el formulario y nos pondremos en contacto contigo lo antes posible.</p>
+            </div>
+
+            <!-- Formulario de contacto -->
+            <div class="col-12 col-md-6">
+                <div class="card shadow-m p-2">
+                    <form action="" method="post">
+                        <div class="mb-2">
+                            <label for="nombre" class="form-label etiqueta">Nombre</label>
+                            <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="mb-2">
+                            <label for="correo" class="form-label etiqueta">Correo Electrónico</label>
+                            <input type="email" name="correo" id="correo" class="form-control" placeholder="Tu correo electrónico" required>
+                        </div>
+                        <div class="mb-2">
+                            <label for="telefono" class="form-label etiqueta">Teléfono</label>
+                            <input type="text" name="telefono" id="telefono" class="form-control" placeholder="Tu teléfono" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label etiqueta">Mensaje</label>
+                            <textarea name="mensaje" id="mensaje" class="form-control" rows="4" placeholder="Escribe tu mensaje aquí" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-custom w-100 mb-2 ">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Sección de contacto -->
+                <div class="col-12 col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <h5>Contacto</h5>
+                    <p class="mb-1">info@movesafe.com</p>
+                    <p>Tel: +123 456 789</p>
+                    <p>Dirección: Calle Falsa 123, Bogotá, Colombia</p>
+                </div>
+
+                <!-- Sección de redes sociales -->
+                <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+                    <h5>Síguenos</h5>
+                    <div class="social-icons">
+                        <a href="#" class="me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="me-3"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Derechos reservados -->
+                <div class="col-12 col-md-4 text-center text-md-end">
+                    <p class="mb-0">&copy; 2025 MoveSafe. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
