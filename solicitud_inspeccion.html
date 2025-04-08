@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Solicitud de Inspección</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="logo-container">
+      <img src="logo.png" class="logo" alt="Logo" />
+      <h1>MOVESAFE</h1>
+    </div>
+    <nav class="navbar">
+      <a href="#">INICIO</a>
+      <a href="#">SERVICIOS</a>
+      <a href="#">CONTACTO</a>
+      <a href="#">INICIAR SESIÓN</a>
+    </nav>
+  </header>
+
+  <main class="solicitud-inspeccion">
+    <h2>Solicitud de Inspección</h2>
+
+    <div class="formulario-grid">
+      <!-- Datos personales -->
+      <div class="bloque-formulario">
+        <input type="text" placeholder="Nombre completo">
+        <input type="text" placeholder="Número Identificación">
+        <input type="tel" placeholder="Celular">
+        <input type="email" placeholder="Correo electrónico">
+      </div>
+
+      <!-- Tipo de inspección -->
+      <div class="bloque-formulario">
+        <p>Tipo de inspección:</p>
+        <label><input type="checkbox"> Precompra</label><br>
+        <label><input type="checkbox"> Mantenimiento</label><br>
+        <label><input type="checkbox"> Siniestro</label><br>
+        <label><input type="checkbox"> Técnico-mecánica</label><br>
+        <label><input type="checkbox"> Otra: <input type="text" class="input-otra"></label>
+      </div>
+
+      <!-- Información vehículo -->
+      <div class="bloque-formulario vehiculo">
+        <div class="tabs">
+          <button class="tab activo">Carro</button>
+          <button class="tab">Moto</button>
+        </div>
+        <div class="campos-vehiculo">
+          <div class="fila">
+            <input type="text" placeholder="Placa">
+            <input type="text" placeholder="Modelo">
+          </div>
+          <div class="fila">
+            <input type="text" placeholder="Marca">
+            <input type="text" placeholder="Año">
+          </div>
+          <div class="fila">
+            <input type="text" placeholder="Color">
+            <input type="text" placeholder="Número de chasis">
+          </div>
+          <input type="text" placeholder="Número de motor">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="info-contacto">
+      <p>Contacto: info@tuservicio.com | Tel: +123 456 789</p>
+      <p>Dirección: Calle Falsa 123, Ciudad, País</p>
+    </div>
+    <div class="redes">
+      <img src="mail-icon.png" alt="Correo">
+      <img src="instagram-icon.png" alt="Instagram">
+      <img src="youtube-icon.png" alt="YouTube">
+      <img src="facebook-icon.png" alt="Facebook">
+    </div>
+  </footer>
+</body>
+</html>
+
